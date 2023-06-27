@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&display=swap');
+
+body {
+    font-family: 'Delius Swash Caps', cursive;
+    margin: 0;
+    background-color: #B2CFC8;
+}
+
+.container {
+    width: 1100px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.header-top {
+    background-color: #E4BCC0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    gap: 30px;
+}
+
+header ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+header ul li a::after {
+    width: 0%;
+    height: 2px;
+    background-color: #000000;
+    margin-top: 2px;
+    transition: .2s;
+
+    /* Обязательно*/
+    display: block;
+    content: '';
+}
+
+header ul li a:hover:after{
+    width: 100%;
+}
+
+.text h1{
+    font-weight: 900;
+    font-size: 72px;
+}
+
+.text p{
+    font-weight: 300;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.text a.btn {
+    margin-top: 20px;
+    color: #000000;
+    text-decoration: none;
+    background-color: #E4BCC0;
+    border-radius: 10px;
+    padding: 22px 119px;
+    font-size: 40px
+}
+
+a.btn:hover{
+    color: white;
+    background-color:#B2CFC8;
+    border: 3px solid #E4BCC0;
+}
+
+.text{
+    margin-top: 150px;
+    position: relative;
+    z-index: 1;
+}
+.text h1, text p{
+    pointer-events: none;
+}
+
+.spline{
+    position: absolute;
+    left: 0px;
+    top: 90px;
+    height: calc(100vh - 90px);
+    width: 100%;
+    overflow: hidden;
+    
+}
+.spline spline-viewer{
+    height: 100vh;
+}
